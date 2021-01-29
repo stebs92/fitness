@@ -1,7 +1,21 @@
 import React from 'react' 
 
-function ExerciseNew() {
-    return 'New Exercise'
+class ExerciseNew extends React.Component {
+
+    handleClick = () =>{
+        console.log("clicked!")
+    }
+
+    render(){
+        return(
+            <div>
+                <button onClick={this.handleClick}>
+                    Click me!
+                </button>
+            </div>
+        )
+    }
 }
+
 
 export default ExerciseNew

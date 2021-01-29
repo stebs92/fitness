@@ -1,13 +1,11 @@
-import { Button } from 'bootstrap'
 import React from 'react' 
 import ExerciseList from '../components/ExerciseList'
 import Welcome from '../components/Welcome'
 import Button2 from '../components/Button2'
 
 class Exercises extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {
+   
+        state = {
             data: 
                 [{
                     "id": 1,
@@ -33,7 +31,7 @@ class Exercises extends React.Component{
                 }]
                 
             }
-    }
+    
     render(){
         return(
             <div>

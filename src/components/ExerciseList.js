@@ -1,12 +1,12 @@
 import React from 'react'
 import Card from './Card'
 
-function ExerciseList (props){
-    return(
-        <div>
-             {props.exercise.map((exercise) =>{
+const ExerciseList = ({exercise}) => (
+    <div>
+             {exercise.map((exercise) =>{
             return(
                 <Card 
+                    key = {exercise.id}
                     title = {exercise.title}
                     description = {exercise.description}
                     img = {exercise.img}
@@ -16,9 +16,7 @@ function ExerciseList (props){
                 )
                 })
              }
-        </div>
-       
-    )
-}
+    </div>
+)
 
 export default ExerciseList
